@@ -1,9 +1,10 @@
-import { Header } from './layout';
+import { Header, Main } from './layout';
 
 function App() {
   return (
     <div className="App">
       <Header />
+      <Main />
     </div>
   );
 }
