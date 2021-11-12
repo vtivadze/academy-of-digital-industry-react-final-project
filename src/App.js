@@ -1,7 +1,9 @@
+import { Header } from './layout';
+
 function App() {
   return (
     <div className="App">
-      Rest Countries
+      <Header />
     </div>
   );
 }
