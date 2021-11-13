@@ -1,10 +1,14 @@
+import { useState } from 'react';
 import { Header, Main } from './layout';
 
 function App() {
+  const [countries, setCountries] = useState([]);
+  const [error, setError] = useState();
+
   return (
     <div className="App">
-      <Header />
-      <Main />
+      <Header setCountries={setCountries} setError={setError} />
+      <Main countries={countries} error={error} />
     </div>
   );
 }

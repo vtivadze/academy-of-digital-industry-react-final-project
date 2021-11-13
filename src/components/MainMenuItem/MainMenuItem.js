@@ -1,7 +1,11 @@
-export const MainMenuItem = ({href, text}) => {
+export const MainMenuItem = ({ region, setRegion }) => {
   return (
     <li className="mine-menu__item">
-      <a className="mine-menu__item-link" href={href}>{text}</a>
+      <button
+        className="mine-menu__item-link"
+        onClick={() => setRegion(region)}>
+        {region}
+      </button>
     </li>
   );
-}
+};
