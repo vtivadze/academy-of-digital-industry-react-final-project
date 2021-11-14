@@ -1,0 +1,24 @@
+.countryDataItem {
+  overflow: hidden;
+}
+
+.description {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 2px;
+  width: 50%;
+  color: #79b809;
+  text-align: right;
+  background-color: #43581d;
+}
+
+.value {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 2px;
+  width: 50%;
+  color: #43581d;
+  text-align: left;
+  background-color: #79b809;
+  white-space: nowrap;
+}

@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { getItem } from '../../helpers/localStorage';
 import { FilterInput } from '../FilterInput/FilterIniput';
+import style from './FilterForm.module.css';
 
 export const FilterForm = ({ setCountries }) => {
   const [countryName, setCountryName] = useState('');
@@ -39,7 +40,7 @@ export const FilterForm = ({ setCountries }) => {
   }, [filters]);
 
   return (
-    <form className="filter">
+    <form className={`${style.filterForm}`}>
       <FilterInput
         label='Country'
         inputName='countryName'
@@ -51,9 +52,6 @@ export const FilterForm = ({ setCountries }) => {
         inputName='capitalName'
         value={capitalName}
         onChange={event => onChange(event, setCapitalName)}
-      />
-      <FilterInput
-        label=''
       />
     </form>
   );

@@ -3,6 +3,7 @@ import { fetchRegionCountries } from '../../api/fetchRegionCountries';
 import { MainMenuItem } from '../MainMenuItem';
 import { Regions } from '../../data/Regions';
 import { saveItem } from '../../helpers/localStorage';
+import style from './MainMenu.module.css';
 
 export const MainMenu = ({ setCountries, setError }) => {
   const [region, setRegion] = useState('Europe');
@@ -17,8 +18,8 @@ export const MainMenu = ({ setCountries, setError }) => {
   }, [region]);
 
   return (
-    <nav className="main-menu">
-      <ul className="mine-menu__container">
+    <nav className={`${style.mainMenu}`}>
+      <ul className={`${style.mainMenu__container}`}>
         {Regions.map(region => (
           <MainMenuItem key={region} region={region} setRegion={setRegion} />
         ))}

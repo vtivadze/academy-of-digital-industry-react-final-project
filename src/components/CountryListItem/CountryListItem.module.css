@@ -1,0 +1,36 @@
+.countryListItem {
+  position: relative;
+  padding-left: 50%;
+  border: 1px solid black;
+  height: 170px;
+}
+
+.countryFlag {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+.countryData {
+  padding: 10px;
+  overflow: hidden;
+}
+
+.countryListItem h1 {
+  right: 10px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.countryListItem h1 a {
+  font-size: 1.2rem;
+  color: rgba(0, 0, 0, 0.6);
+  white-space: nowrap;
+}

@@ -1,0 +1,18 @@
+.mainMenu__item {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.mainMenu__item:hover {
+  background-color: #a4ac94;
+}
+
+.mainMenu__itemLink {
+  padding: 10px 20px;
+  font-size: 1.3rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: none;
+}
