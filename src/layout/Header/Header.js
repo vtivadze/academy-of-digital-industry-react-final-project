@@ -1,4 +1,4 @@
-import { Logo } from '../../components/Logo';
+import { Logo } from '../../components/Logo/Logo';
 import { MainMenu } from '../../components/MainMenu/MainMenu';
 import style from './Header.module.css';
 
