@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Header, Main } from './layout';
+import { Header, Sidebar, Main } from './layout';
 
 function App() {
   const [countries, setCountries] = useState([]);
@@ -8,6 +8,7 @@ function App() {
   return (
     <div className="App">
       <Header setCountries={setCountries} setError={setError} />
+      <Sidebar setCountries={setCountries} />
       <Main countries={countries} error={error} />
     </div>
   );
