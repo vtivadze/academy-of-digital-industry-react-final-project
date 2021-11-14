@@ -1,15 +1,18 @@
 import { useState } from 'react';
-import { Header, Sidebar, Main } from './layout';
+import { Header, Sidebar, Content, Footer } from './layout';
+import './App.css';
 
 function App() {
   const [countries, setCountries] = useState([]);
-  const [error, setError] = useState();
 
   return (
-    <div className="App">
-      <Header setCountries={setCountries} setError={setError} />
-      <Sidebar setCountries={setCountries} />
-      <Main countries={countries} error={error} />
+    <div className="app">
+      <Header setCountries={setCountries} />
+      <main className="main">
+        <Sidebar setCountries={setCountries} />
+        <Content countries={countries}  />
+      </main>
+      <Footer />
     </div>
   );
 }

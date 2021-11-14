@@ -1,0 +1,9 @@
+.sidebar {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 15px 30px;
+  min-width: 210px;
+  max-width: 260px;
+  background-color: #a4ac94;
+}

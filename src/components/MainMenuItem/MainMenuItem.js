@@ -1,8 +1,10 @@
+import style from './MainMenuItem.module.css';
+
 export const MainMenuItem = ({ region, setRegion }) => {
   return (
-    <li className="mine-menu__item">
+    <li className={`${style.mainMenu__item}`}>
       <button
-        className="mine-menu__item-link"
+        className={`${style.mainMenu__itemLink}`}
         onClick={() => setRegion(region)}>
         {region}
       </button>
