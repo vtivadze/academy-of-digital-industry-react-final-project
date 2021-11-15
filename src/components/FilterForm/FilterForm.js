@@ -23,7 +23,10 @@ export const FilterForm = ({ setCountries }) => {
 
   useEffect(() => {
     const countries = getItem('countries');
-    let filteredCountries = [...countries];
+    let filteredCountries = countries ? [...countries] : [];
+    if (!filteredCountries.length) {
+      return;
+    }
   
     Object.entries(filters).forEach(([filterName, filterValue]) => {
       const searchItem = filterValue.toLowerCase();
