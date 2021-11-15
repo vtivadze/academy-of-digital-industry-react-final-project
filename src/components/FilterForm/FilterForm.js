@@ -37,7 +37,7 @@ export const FilterForm = ({ setCountries }) => {
 
     filteredCountries = Object.entries(filters).length ? filteredCountries : [...countries];
     setCountries(filteredCountries);
-  }, [filters]);
+  }, [filters, setCountries]);
 
   return (
     <form className={`${style.filterForm}`}>

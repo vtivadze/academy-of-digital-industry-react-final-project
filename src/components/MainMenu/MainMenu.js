@@ -5,7 +5,7 @@ import { Regions } from '../../data/Regions';
 import { saveItem } from '../../helpers/localStorage';
 import style from './MainMenu.module.css';
 
-export const MainMenu = ({ setCountries, setError }) => {
+export const MainMenu = ({ setCountries }) => {
   const [region, setRegion] = useState('Europe');
 
   useEffect(() => {
@@ -14,8 +14,8 @@ export const MainMenu = ({ setCountries, setError }) => {
         saveItem('countries', countries);
         setCountries(countries)
       })
-      .catch(error => setError(error.message));
-  }, [region]);
+      .catch(error => console.log(error));
+  }, [region, setCountries]);
 
   return (
     <nav className={`${style.mainMenu}`}>
