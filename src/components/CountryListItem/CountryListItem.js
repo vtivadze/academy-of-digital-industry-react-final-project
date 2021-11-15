@@ -10,7 +10,7 @@ export const CountryListItem = ({ country }) => {
         style={{ backgroundImage: `url(${country.flags.svg})` }}>
       </div>
       <div className={`${style.countryData}`}>
-        <h1><a href="#" title={country.name.official}>{country.name.official}</a></h1>
+        <h1><a href="/" title={country.name.official}>{country.name.official}</a></h1>
         <div className={`${style.countryDataContainer}`}>
           <CountryDataItem
             description="Continent:"
